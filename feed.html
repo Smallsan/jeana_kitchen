@@ -45,8 +45,8 @@
 				<span class="hero-pill">Kitchen updates</span>
 				<h1>Fresh from the ovens and rolling trays</h1>
 				<p>
-					See what we've delivered lately, from premium puff drops to packed meal
-					deliveries and party tray runs.
+					See what we've delivered lately, from premium puff drops to packed
+					meal deliveries and party tray runs.
 				</p>
 			</div>
 		</header>
@@ -69,45 +69,48 @@
 							</div>
 						</div>
 						<p>
-							🥐 Good things take time to bake — pre-order your premium puffs now!
-							✨ Available this Friday (October 24, 2025)
+							🥐 Good things take time to bake — pre-order your premium puffs
+							now! ✨ Available this Friday (October 24, 2025)
 						</p>
 						<div class="feed-collapsible" id="premium-puffs-details">
 							<ul class="feed-list">
 								<li>
-									<strong>✨ Apple Custard</strong> – Flaky pastry filled with creamy
-									custard and sweet apple chunks.
+									<strong>✨ Apple Custard</strong> – Flaky pastry filled with
+									creamy custard and sweet apple chunks.
 									<span class="feed-price">₱120</span>
 								</li>
 								<li>
-									<strong>🧀 Cuban Cheese</strong> – Golden pastry with a rich blend of
-									cheeses, slightly sweet and perfectly balanced with a hint of salt.
+									<strong>🧀 Cuban Cheese</strong> – Golden pastry with a rich
+									blend of cheeses, slightly sweet and perfectly balanced with a
+									hint of salt.
 									<span class="feed-price">₱100</span>
 								</li>
 								<li>
-									<strong>🍫 Chocolate Custard</strong> – Buttery layers packed with smooth
-									chocolate custard.
+									<strong>🍫 Chocolate Custard</strong> – Buttery layers packed
+									with smooth chocolate custard.
 									<span class="feed-price">₱130</span>
 								</li>
 								<li>
-									<strong>🐔 Chicken Fajita</strong> – Spiced chicken, bell peppers, onions,
-									and melted cheese in a golden, flaky wrap.
+									<strong>🐔 Chicken Fajita</strong> – Spiced chicken, bell
+									peppers, onions, and melted cheese in a golden, flaky wrap.
 									<span class="feed-price">₱150</span>
 								</li>
 								<li>
-									<strong>🍕 Pizza Pocket</strong> – Tomato sauce, melted cheese, bell pepper,
-									onion, and pepperoni baked inside a crisp crust.
+									<strong>🍕 Pizza Pocket</strong> – Tomato sauce, melted
+									cheese, bell pepper, onion, and pepperoni baked inside a crisp
+									crust.
 									<span class="feed-price">₱160</span>
 								</li>
 								<li>
-									<strong>🥓 Ham &amp; Cheese</strong> – A timeless favorite with savory ham and
-									gooey cheese.
+									<strong>🥓 Ham &amp; Cheese</strong> – A timeless favorite
+									with savory ham and gooey cheese.
 									<span class="feed-price">₱150</span>
 								</li>
 							</ul>
 							<p>
 								<strong>
-									💛 Freshly baked, irresistibly flaky, and made with premium ingredients.
+									💛 Freshly baked, irresistibly flaky, and made with premium
+									ingredients.
 								</strong>
 							</p>
 							<p>📦 Place your pre-orders now and taste the difference!</p>
@@ -143,8 +146,8 @@
 							</div>
 						</div>
 						<p>
-							Your celebrations, our kitchen creations 🎉 This morning’s party trays are
-							on their way to make gatherings extra special. 💖
+							Your celebrations, our kitchen creations 🎉 This morning’s party
+							trays are on their way to make gatherings extra special. 💖
 						</p>
 						<div class="feed-media has-image">
 							<img
@@ -169,8 +172,8 @@
 							</div>
 						</div>
 						<p>
-							No group photo of last Friday’s orders, but every single meal was made
-							with love. 🥰 Thank you for the endless support!
+							No group photo of last Friday’s orders, but every single meal was
+							made with love. 🥰 Thank you for the endless support!
 						</p>
 						<div class="feed-media has-image">
 							<img
@@ -198,26 +201,31 @@
 				yearEl.textContent = new Date().getFullYear();
 			}
 
-			document.querySelectorAll(".feed-card[data-expandable]").forEach((card) => {
-				const toggleBtn = card.querySelector(".feed-toggle");
-				const collapsible = card.querySelector(".feed-collapsible");
-				if (!toggleBtn || !collapsible) {
-					return;
-				}
+			document
+				.querySelectorAll(".feed-card[data-expandable]")
+				.forEach((card) => {
+					const toggleBtn = card.querySelector(".feed-toggle");
+					const collapsible = card.querySelector(".feed-collapsible");
+					if (!toggleBtn || !collapsible) {
+						return;
+					}
 
-				const setState = (expanded) => {
-					card.dataset.expanded = expanded ? "true" : "false";
-					toggleBtn.textContent = expanded ? "Read less" : "Read more…";
-					toggleBtn.setAttribute("aria-expanded", expanded ? "true" : "false");
-				};
+					const setState = (expanded) => {
+						card.dataset.expanded = expanded ? "true" : "false";
+						toggleBtn.textContent = expanded ? "Read less" : "Read more…";
+						toggleBtn.setAttribute(
+							"aria-expanded",
+							expanded ? "true" : "false"
+						);
+					};
 
-				setState(card.dataset.expanded === "true");
+					setState(card.dataset.expanded === "true");
 
-				toggleBtn.addEventListener("click", () => {
-					const next = card.dataset.expanded !== "true";
-					setState(next);
+					toggleBtn.addEventListener("click", () => {
+						const next = card.dataset.expanded !== "true";
+						setState(next);
+					});
 				});
-			});
 		</script>
 	</body>
 </html>
