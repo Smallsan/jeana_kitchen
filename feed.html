@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Catch the latest updates and kitchen stories from Jeana's Kitchen."
+		/>
+		<title>Feed • Jeana's Kitchen</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAI7Pq/5p5mX0vJf6Uef1xwc0C4/mR3zEF3rG0E4p3RQ2g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="hero" id="top">
+			<nav class="nav">
+				<a class="logo" href="index.html">
+					<img src="assets/images/icon.jpg" alt="Jeana's Kitchen logo" />
+					<span>Jeana's Kitchen</span>
+				</a>
+				<div class="nav-links">
+					<a class="nav-tab" href="index.html">About</a>
+					<a class="nav-tab" href="services.html">Services</a>
+					<a class="nav-tab" href="menu.html">Menu</a>
+					<a class="nav-tab" href="gallery.html">Gallery</a>
+					<a class="nav-tab active" href="feed.html" aria-current="page"
+						>Feed</a
+					>
+					<a class="nav-tab" href="contact.html">Contact</a>
+				</div>
+			</nav>
+			<div class="hero-content">
+				<span class="hero-pill">Kitchen updates</span>
+				<h1>Fresh from the ovens and rolling trays</h1>
+				<p>
+					See what we've delivered lately, from premium puff drops to packed meal
+					deliveries and party tray runs.
+				</p>
+			</div>
+		</header>
+
+		<main>
+			<section class="section feed" id="latest">
+				<div class="section-heading">
+					<span class="eyebrow">Kitchen Feed</span>
+					<h2>What's Cooking Lately</h2>
+				</div>
+				<div class="feed-grid">
+					<article class="feed-card" data-expandable data-expanded="false">
+						<div class="feed-header">
+							<div class="feed-avatar has-image">
+								<img src="assets/images/icon.jpg" alt="Jeana's Kitchen logo" />
+							</div>
+							<div>
+								<h3>Premium Puff Pre-orders</h3>
+								<time datetime="2025-10-24">October 24, 2025 • 9:00 AM</time>
+							</div>
+						</div>
+						<p>
+							🥐 Good things take time to bake — pre-order your premium puffs now!
+							✨ Available this Friday (October 24, 2025)
+						</p>
+						<div class="feed-collapsible" id="premium-puffs-details">
+							<ul class="feed-list">
+								<li>
+									<strong>✨ Apple Custard</strong> – Flaky pastry filled with creamy
+									custard and sweet apple chunks.
+									<span class="feed-price">₱120</span>
+								</li>
+								<li>
+									<strong>🧀 Cuban Cheese</strong> – Golden pastry with a rich blend of
+									cheeses, slightly sweet and perfectly balanced with a hint of salt.
+									<span class="feed-price">₱100</span>
+								</li>
+								<li>
+									<strong>🍫 Chocolate Custard</strong> – Buttery layers packed with smooth
+									chocolate custard.
+									<span class="feed-price">₱130</span>
+								</li>
+								<li>
+									<strong>🐔 Chicken Fajita</strong> – Spiced chicken, bell peppers, onions,
+									and melted cheese in a golden, flaky wrap.
+									<span class="feed-price">₱150</span>
+								</li>
+								<li>
+									<strong>🍕 Pizza Pocket</strong> – Tomato sauce, melted cheese, bell pepper,
+									onion, and pepperoni baked inside a crisp crust.
+									<span class="feed-price">₱160</span>
+								</li>
+								<li>
+									<strong>🥓 Ham &amp; Cheese</strong> – A timeless favorite with savory ham and
+									gooey cheese.
+									<span class="feed-price">₱150</span>
+								</li>
+							</ul>
+							<p>
+								<strong>
+									💛 Freshly baked, irresistibly flaky, and made with premium ingredients.
+								</strong>
+							</p>
+							<p>📦 Place your pre-orders now and taste the difference!</p>
+						</div>
+						<button
+							class="feed-toggle"
+							type="button"
+							aria-expanded="false"
+							aria-controls="premium-puffs-details"
+						>
+							Read more…
+						</button>
+						<div class="feed-media has-image">
+							<img
+								src="assets/images/feed/oct242025.jpg"
+								alt="Assorted premium puff pastries from Jeana's Kitchen"
+							/>
+						</div>
+						<div class="feed-actions">
+							<span><i class="fa-regular fa-heart"></i> 128</span>
+							<span><i class="fa-regular fa-comment"></i> 34</span>
+							<span><i class="fa-solid fa-share"></i> Share</span>
+						</div>
+					</article>
+					<article class="feed-card">
+						<div class="feed-header">
+							<div class="feed-avatar has-image">
+								<img src="assets/images/icon.jpg" alt="Jeana's Kitchen logo" />
+							</div>
+							<div>
+								<h3>Party Trays In Transit</h3>
+								<time datetime="2025-09-04">September 4, 2025 • 8:15 AM</time>
+							</div>
+						</div>
+						<p>
+							Your celebrations, our kitchen creations 🎉 This morning’s party trays are
+							on their way to make gatherings extra special. 💖
+						</p>
+						<div class="feed-media has-image">
+							<img
+								src="assets/images/feed/sept422025.jpg"
+								alt="Freshly prepared party trays ready for delivery"
+							/>
+						</div>
+						<div class="feed-actions">
+							<span><i class="fa-regular fa-heart"></i> 112</span>
+							<span><i class="fa-regular fa-comment"></i> 27</span>
+							<span><i class="fa-solid fa-share"></i> Share</span>
+						</div>
+					</article>
+					<article class="feed-card">
+						<div class="feed-header">
+							<div class="feed-avatar has-image">
+								<img src="assets/images/icon.jpg" alt="Jeana's Kitchen logo" />
+							</div>
+							<div>
+								<h3>Friday Favorites Recap</h3>
+								<time datetime="2025-09-01">September 1, 2025 • 7:45 PM</time>
+							</div>
+						</div>
+						<p>
+							No group photo of last Friday’s orders, but every single meal was made
+							with love. 🥰 Thank you for the endless support!
+						</p>
+						<div class="feed-media has-image">
+							<img
+								src="assets/images/feed/sept12025.jpg"
+								alt="Individual packed meals prepared by Jeana's Kitchen"
+							/>
+						</div>
+						<div class="feed-actions">
+							<span><i class="fa-regular fa-heart"></i> 86</span>
+							<span><i class="fa-regular fa-comment"></i> 21</span>
+							<span><i class="fa-solid fa-share"></i> Share</span>
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<p>&copy; <span id="year"></span> Jeana's Kitchen.</p>
+		</footer>
+
+		<script>
+			const yearEl = document.getElementById("year");
+			if (yearEl) {
+				yearEl.textContent = new Date().getFullYear();
+			}
+
+			document.querySelectorAll(".feed-card[data-expandable]").forEach((card) => {
+				const toggleBtn = card.querySelector(".feed-toggle");
+				const collapsible = card.querySelector(".feed-collapsible");
+				if (!toggleBtn || !collapsible) {
+					return;
+				}
+
+				const setState = (expanded) => {
+					card.dataset.expanded = expanded ? "true" : "false";
+					toggleBtn.textContent = expanded ? "Read less" : "Read more…";
+					toggleBtn.setAttribute("aria-expanded", expanded ? "true" : "false");
+				};
+
+				setState(card.dataset.expanded === "true");
+
+				toggleBtn.addEventListener("click", () => {
+					const next = card.dataset.expanded !== "true";
+					setState(next);
+				});
+			});
+		</script>
+	</body>
+</html>

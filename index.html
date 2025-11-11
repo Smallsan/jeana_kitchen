@@ -1,602 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Jeana's Kitchen in Malabon City offers party trays, cakes, desserts, and catering for every celebration." />
-    <title>Jeana's Kitchen Malabon City</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAI7Pq/5p5mX0vJf6Uef1xwc0C4/mR3zEF3rG0E4p3RQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-    <header class="hero" id="home">
-        <nav class="nav">
-            <a class="logo" href="#home">
-                <img src="assets/images/icon.jpg" alt="Jeana's Kitchen logo" />
-                <span>Jeana's Kitchen</span>
-            </a>
-            <div class="nav-links" role="tablist" aria-label="Jeana's Kitchen sections">
-                <button class="nav-tab active" type="button" role="tab" aria-selected="true" data-tab-target="about">About</button>
-                <button class="nav-tab" type="button" role="tab" aria-selected="false" data-tab-target="services">Services</button>
-                <button class="nav-tab" type="button" role="tab" aria-selected="false" data-tab-target="menu">Menu</button>
-                <button class="nav-tab" type="button" role="tab" aria-selected="false" data-tab-target="cakes">Cakes</button>
-                <button class="nav-tab" type="button" role="tab" aria-selected="false" data-tab-target="gallery">Gallery</button>
-                <button class="nav-tab" type="button" role="tab" aria-selected="false" data-tab-target="feed">Feed</button>
-                <button class="nav-tab" type="button" role="tab" aria-selected="false" data-tab-target="contact">Contact</button>
-            </div>
-        </nav>
-        <div class="hero-content">
-            <span class="hero-pill">Malabon City • Since 2010</span>
-            <h1>Celebration-Worthy Party Trays, Cakes, and Catering</h1>
-            <p>Handcrafted dishes and desserts that feed big moments. Batches good for up to 10 guests, lovingly prepared from Jeana's Kitchen.</p>
-            <div class="hero-actions">
-                <button class="btn btn-primary" type="button" data-tab-target="menu">View Menu</button>
-                <button class="btn btn-outline" type="button" data-tab-target="contact">Plan an Event</button>
-            </div>
-        </div>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Jeana's Kitchen in Malabon City offers party trays, cakes, desserts, and catering for every celebration."
+		/>
+		<title>Jeana's Kitchen Malabon City</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAI7Pq/5p5mX0vJf6Uef1xwc0C4/mR3zEF3rG0E4p3RQ2g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="hero" id="home">
+			<nav class="nav">
+				<a class="logo" href="index.html">
+					<img src="assets/images/icon.jpg" alt="Jeana's Kitchen logo" />
+					<span>Jeana's Kitchen</span>
+				</a>
+				<div class="nav-links">
+					<a class="nav-tab active" href="index.html" aria-current="page"
+						>About</a
+					>
+					<a class="nav-tab" href="services.html">Services</a>
+					<a class="nav-tab" href="menu.html">Menu</a>
+					<a class="nav-tab" href="gallery.html">Gallery</a>
+					<a class="nav-tab" href="feed.html">Feed</a>
+					<a class="nav-tab" href="contact.html">Contact</a>
+				</div>
+			</nav>
+			<div class="hero-content">
+				<span class="hero-pill">Malabon City • Since 2010</span>
+				<h1>Celebration-Worthy Party Trays, Cakes, and Catering</h1>
+				<p>
+					Handcrafted dishes and desserts that feed big moments. Batches good
+					for up to 10 guests, lovingly prepared from Jeana's Kitchen.
+				</p>
+			</div>
+		</header>
 
-    <main>
-        <div class="tabs">
-            <section class="tab-panel active" id="about" role="tabpanel">
-                <div class="section about">
-                    <div class="section-heading">
-                        <span class="eyebrow">Our Story</span>
-                        <h2>Homestyle Cooking Crafted for Sharing</h2>
-                    </div>
-                    <p>Jeana's Kitchen is a family-run kitchen based in Malabon City, known for generous party trays, delightful cakes, and fully-customized catering spreads. From everyday gatherings to milestone events, we prepare comfort dishes and desserts that travel beautifully and taste like they were made at home.</p>
-                    <div class="about-grid">
-                        <article>
-                            <h3>Party Trays</h3>
-                            <p>Signature entrées and sides portioned for 8 to 10 guests—perfect for potlucks, office celebrations, and family weekends.</p>
-                        </article>
-                        <article>
-                            <h3>Cakes & Desserts</h3>
-                            <p>Celebrate with bespoke cakes, cupcakes, and sweets personalized to your theme, from rustic naked cakes to decadent chocolate creations.</p>
-                        </article>
-                        <article>
-                            <h3>Catering</h3>
-                            <p>From intimate gatherings to full-service receptions, let us curate a menu that fits your tastes, budget, and schedule.</p>
-                        </article>
-                    </div>
-                    <div class="highlight">
-                        <div class="highlight-text">
-                            <h2>Showcase Your Favorites</h2>
-                            <p>Add your best-sellers and seasonal offerings here. Drop in vibrant food photographs to make guests crave a taste.</p>
-                        </div>
-                        <div class="highlight-media">
-                            <div class="image-dropzone" data-label="Feature Image">
-                                <span>Drag dish photo here</span>
-                            </div>
-                            <div class="image-dropzone" data-label="Dessert Feature">
-                                <span>Drag dessert photo here</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+		<main>
+			<section class="section about" id="about">
+				<div class="section-heading">
+					<span class="eyebrow">Our Story</span>
+					<h2>Homestyle Cooking Crafted for Sharing</h2>
+				</div>
+				<p>
+					Jeana's Kitchen is a family-run kitchen based in Malabon City,
+					known for generous party trays, delightful cakes, and
+					fully-customized catering spreads. From everyday gatherings to
+					milestone events, we prepare comfort dishes and desserts that
+					travel beautifully and taste like they were made at home.
+				</p>
+				<div class="about-grid">
+					<article>
+						<h3>Party Trays</h3>
+						<p>
+							Signature entrées and sides portioned for 8 to 10
+							guests—perfect for potlucks, office celebrations, and family
+							weekends.
+						</p>
+					</article>
+					<article>
+						<h3>Cakes & Desserts</h3>
+						<p>
+							Celebrate with bespoke cakes, cupcakes, and sweets
+							personalized to your theme, from rustic naked cakes to
+							decadent chocolate creations.
+						</p>
+					</article>
+					<article>
+						<h3>Catering</h3>
+						<p>
+							From intimate gatherings to full-service receptions, let us
+							curate a menu that fits your tastes, budget, and schedule.
+						</p>
+					</article>
+				</div>
+				<div class="highlight">
+					<div class="highlight-text">
+						<h2>Fiesta Table Crowd-Pleasers</h2>
+						<p>
+							Let your guests graze on our kare-kare party tray, fiesta palabok
+							bilao, and dessert samplers—made fresh in Malabon and sealed for
+							delivery.
+						</p>
+						<p class="highlight-note">
+							Reserve at least 24 hours ahead so we can simmer, bake, and box
+							everything the way you expect.
+						</p>
+					</div>
+					<div class="highlight-media feature-showcase">
+						<figure class="showcase-card">
+							<img
+								src="assets/images/gallery/5.jpg"
+								alt="Fiesta palabok bilao topped with chicharrón, eggs, and shrimps"
+							/>
+						</figure>
+						<figure class="feature-video">
+							<video
+								src="assets/videos/front_page.mp4"
+								autoplay
+								playsinline
+								muted
+								loop
+								poster="assets/images/gallery/1.jpg"
+							>
+								Sorry, your browser doesn't support embedded videos.
+							</video>
+						</figure>
+						<figure class="showcase-card">
+							<img
+								src="assets/images/gallery/7.jpg"
+								alt="Assorted party trays of viands, rice, and desserts on a buffet table"
+							/>
+						</figure>
+					</div>
+				</div>
+			</section>
+		</main>
 
-            <section class="tab-panel" id="services" role="tabpanel">
-                <div class="section offerings">
-                    <div class="section-heading">
-                        <span class="eyebrow">What We Do</span>
-                        <h2>Party Trays | Cakes | Packed Meals | Catering | Etc.</h2>
-                    </div>
-                    <div class="card-grid">
-                        <article class="card">
-                            <h3>Party Trays</h3>
-                            <p>Ready-to-serve trays good for 8–10 people, available in best-selling entrées, pasta, and side dishes.</p>
-                        </article>
-                        <article class="card">
-                            <h3>Packed Meals</h3>
-                            <p>Individually packed meals ideal for corporate events, seminars, and community programs.</p>
-                        </article>
-                        <article class="card">
-                            <h3>Celebration Cakes</h3>
-                            <p>Layer cakes, dessert tables, and sweet giveaways customized for birthdays, weddings, and everything in between.</p>
-                        </article>
-                        <article class="card">
-                            <h3>Full Catering</h3>
-                            <p>Menu design, styling, staffing, and coordination for seamless celebrations at home or at your chosen venue.</p>
-                        </article>
-                    </div>
-                </div>
-            </section>
+		<footer class="footer">
+			<p>&copy; <span id="year"></span> Jeana's Kitchen.</p>
+		</footer>
 
-            <section class="tab-panel" id="menu" role="tabpanel">
-                <div class="section menu">
-            <div class="section-heading">
-                <span class="eyebrow">Regular Menu</span>
-                <h2>Good for 8 – 10 Guests</h2>
-            </div>
-            <div class="menu-content">
-                <div class="menu-column">
-                    <h3>Entrée &amp; Veggies</h3>
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Baked Pork Belly with Atsara"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Baked Pork Belly with Atsara</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Baby Back Ribs with Veggies"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Baby Back Ribs with Veggies</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Crispy Pork Kare Kare with Veggies"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Crispy Pork Kare Kare with Veggies</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Beef Kare Kare with Veggies"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Beef Kare Kare with Veggies</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Creamy Beef Mushroom"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Creamy Beef Mushroom</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Beef Caldereta"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Beef Caldereta</span>
-                                <span class="menu-price">₱1,800</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Pork Caldereta"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Pork Caldereta</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Chicken Ala King"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Chicken Ala King</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Chicken Teriyaki"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Chicken Teriyaki</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Chicken Parmigiana"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Chicken Parmigiana</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Lemon Garlic Chicken"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Lemon Garlic Chicken</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Beef Salpicao"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Beef Salpicao</span>
-                                <span class="menu-price">₱1,700</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Chicken Wings"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Chicken Wings</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Beef Mechado"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Beef Mechado</span>
-                                <span class="menu-price">₱1,800</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Pata Tim"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Pata Tim</span>
-                                <span class="menu-price">₱1,100</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Pork Spring Rolls"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Pork Spring Rolls</span>
-                                <span class="menu-price">₱1,000</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Chicken Pastel with Flaky Crust"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Chicken Pastel with Flaky Crust</span>
-                                <span class="menu-price">₱1,700</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Cordon Bleu"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Cordon Bleu</span>
-                                <span class="menu-price">₱1,600</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Shepherd's Pie (Beef)"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Shepherd's Pie (Beef)</span>
-                                <span class="menu-price">₱1,700</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Shepherd's Pie (Pork)"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Shepherd's Pie (Pork)</span>
-                                <span class="menu-price">₱1,600</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Shepherd's Pie (Chicken)"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Shepherd's Pie (Chicken)</span>
-                                <span class="menu-price">₱1,600</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Fish Fillet with Tartar Sauce"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Fish Fillet with Tartar Sauce</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Pork Embutido (per piece)"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Pork Embutido (per piece)</span>
-                                <span class="menu-price">₱220</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Chopsuey"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Chopsuey</span>
-                                <span class="menu-price">₱1,000</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Chicken Salad"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Chicken Salad</span>
-                                <span class="menu-price">₱800</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Beef Broccoli"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Beef Broccoli</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu-column">
-                    <h3>Pasta &amp; Noodles</h3>
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Creamy Chicken Pesto"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Creamy Chicken Pesto</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Creamy Chicken Bacon Alfredo"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Creamy Chicken Bacon Alfredo</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Shrimp Scampi"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Shrimp Scampi</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Chicken Peanut Sesame"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Chicken Peanut Sesame</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Truffle Pasta"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Truffle Pasta</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Cheesy Baked Macaroni"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Cheesy Baked Macaroni</span>
-                                <span class="menu-price">₱1,000</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Creamy Tuscan Chicken"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Creamy Tuscan Chicken</span>
-                                <span class="menu-price">₱1,400</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Filipino Style Spaghetti"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Filipino Style Spaghetti</span>
-                                <span class="menu-price">₱1,300</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Garlic Longganisa Pasta"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Garlic Longganisa Pasta</span>
-                                <span class="menu-price">₱1,300</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Pancit Canton"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Pancit Canton</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Birthday Noodles"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Birthday Noodles</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-photo image-dropzone" data-label="Sotanghon"><span>Insert dish photo</span></div>
-                            <div class="menu-details">
-                                <span class="menu-name">Sotanghon</span>
-                                <span class="menu-price">₱1,500</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="menu-notes">
-                <p><strong>Need a custom menu?</strong> Let us tailor-fit dishes for dietary preferences, corporate packages, or themed celebrations.</p>
-            </div>
-                </div>
-            </section>
-
-            <section class="tab-panel" id="cakes" role="tabpanel">
-                <div class="section cakes">
-                    <div class="section-heading">
-                        <span class="eyebrow">Cakes &amp; Desserts</span>
-                        <h2>Sweet Tables and Custom Creations</h2>
-                    </div>
-                    <div class="cakes-grid">
-                        <div class="image-dropzone" data-label="Signature Cake">
-                            <span>Place cake photo here</span>
-                        </div>
-                        <div class="image-dropzone" data-label="Dessert Spread">
-                            <span>Place dessert spread photo here</span>
-                        </div>
-                        <div class="image-dropzone" data-label="Cupcake Highlight">
-                            <span>Place cupcake photo here</span>
-                        </div>
-                        <div class="cakes-copy">
-                            <p>Every celebration deserves a centerpiece. From minimalist buttercream cakes to themed dessert tables, we bake and decorate to match your story. Share your inspiration board and we'll craft the sweets that bring it to life.</p>
-                            <button class="btn btn-primary" type="button" data-tab-target="contact">Request a Cake Quote</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="tab-panel" id="gallery" role="tabpanel">
-                <div class="section gallery">
-                    <div class="section-heading">
-                        <span class="eyebrow">Food Gallery</span>
-                        <h2>Ready Spaces for Your Photos</h2>
-                    </div>
-                    <div class="gallery-grid">
-                        <div class="image-dropzone" data-label="Dish 01"><span>Drop image</span></div>
-                        <div class="image-dropzone" data-label="Dish 02"><span>Drop image</span></div>
-                        <div class="image-dropzone" data-label="Dish 03"><span>Drop image</span></div>
-                        <div class="image-dropzone" data-label="Dish 04"><span>Drop image</span></div>
-                        <div class="image-dropzone" data-label="Dish 05"><span>Drop image</span></div>
-                        <div class="image-dropzone" data-label="Dish 06"><span>Drop image</span></div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="tab-panel" id="feed" role="tabpanel">
-                <div class="section feed">
-                    <div class="section-heading">
-                        <span class="eyebrow">Kitchen Feed</span>
-                        <h2>What's Cooking Lately</h2>
-                    </div>
-                    <div class="feed-grid">
-                        <article class="feed-card">
-                            <div class="feed-header">
-                                <div class="feed-avatar image-dropzone" data-label="Profile"><span>Logo</span></div>
-                                <div>
-                                    <h3>New Holiday Menu Drop</h3>
-                                    <time datetime="2025-11-05">November 5, 2025 • 10:30 AM</time>
-                                </div>
-                            </div>
-                            <p>Warm trays, rich sauces, and desserts wrapped with love. Share a teaser image of your seasonal spread and invite guests to reserve their slots early.</p>
-                            <div class="feed-media image-dropzone" data-label="Feed Image">
-                                <span>Drop food photo</span>
-                            </div>
-                            <div class="feed-actions">
-                                <span><i class="fa-regular fa-heart"></i> 128</span>
-                                <span><i class="fa-regular fa-comment"></i> 34</span>
-                                <span><i class="fa-solid fa-share"></i> Share</span>
-                            </div>
-                        </article>
-                        <article class="feed-card">
-                            <div class="feed-header">
-                                <div class="feed-avatar image-dropzone" data-label="Profile"><span>Logo</span></div>
-                                <div>
-                                    <h3>Client Celebration Highlights</h3>
-                                    <time datetime="2025-10-18">October 18, 2025 • 6:00 PM</time>
-                                </div>
-                            </div>
-                            <p>Feature snapshots from recent events, tag collaborators, and mention feedback from happy celebrants to build social proof.</p>
-                            <div class="feed-media image-dropzone" data-label="Event Photo">
-                                <span>Drop event photo</span>
-                            </div>
-                            <div class="feed-actions">
-                                <span><i class="fa-regular fa-heart"></i> 94</span>
-                                <span><i class="fa-regular fa-comment"></i> 18</span>
-                                <span><i class="fa-solid fa-share"></i> Share</span>
-                            </div>
-                        </article>
-                        <article class="feed-card">
-                            <div class="feed-header">
-                                <div class="feed-avatar image-dropzone" data-label="Profile"><span>Logo</span></div>
-                                <div>
-                                    <h3>Kitchen Tips &amp; Stories</h3>
-                                    <time datetime="2025-09-29">September 29, 2025 • 1:15 PM</time>
-                                </div>
-                            </div>
-                            <p>Share cooking tips, behind-the-scenes stories, or staff highlights to keep your community engaged between events.</p>
-                            <div class="feed-media image-dropzone" data-label="Behind the Scenes">
-                                <span>Drop kitchen photo</span>
-                            </div>
-                            <div class="feed-actions">
-                                <span><i class="fa-regular fa-heart"></i> 75</span>
-                                <span><i class="fa-regular fa-comment"></i> 12</span>
-                                <span><i class="fa-solid fa-share"></i> Share</span>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <section class="tab-panel" id="contact" role="tabpanel">
-                <div class="section contact">
-                    <div class="section-heading">
-                        <span class="eyebrow">Plan Your Celebration</span>
-                        <h2>Let's Cook Something Memorable</h2>
-                    </div>
-                    <div class="contact-grid">
-                        <div>
-                            <h3>Kitchen Hours</h3>
-                            <ul class="meta-list">
-                                <li><i class="fa-solid fa-clock"></i><span>Monday – Sunday, 9:00 AM – 7:00 PM</span></li>
-                                <li><i class="fa-solid fa-location-dot"></i><span>Malabon City, Metro Manila</span></li>
-                            </ul>
-                            <h3>Get in Touch</h3>
-                            <ul class="meta-list">
-                                <li><i class="fa-solid fa-phone"></i><span>0912 345 6789</span></li>
-                                <li><i class="fa-solid fa-envelope"></i><span>hello@jeanaskitchen.ph</span></li>
-                                <li><i class="fa-brands fa-facebook"></i><span>@jeanaskitchenph</span></li>
-                            </ul>
-                        </div>
-                        <form class="contact-form">
-                            <label for="name">Name</label>
-                            <input id="name" name="name" type="text" placeholder="Your full name" />
-
-                            <label for="email">Email</label>
-                            <input id="email" name="email" type="email" placeholder="you@example.com" />
-
-                            <label for="message">Event Details</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Event date, headcount, dishes you're eyeing..."></textarea>
-
-                            <button class="btn btn-primary" type="submit">Send Inquiry</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer class="footer">
-        <p>&copy; <span id="year"></span> Jeana's Kitchen.</p>
-    </footer>
-
-    <script>
-        const yearEl = document.getElementById('year');
-        if (yearEl) {
-            yearEl.textContent = new Date().getFullYear();
-        }
-
-        const tabControls = document.querySelectorAll('[data-tab-target]');
-        const tabPanels = document.querySelectorAll('.tab-panel');
-        const headerEl = document.querySelector('header');
-
-        function activateTab(targetId, shouldScroll = true) {
-            if (!targetId) {
-                return;
-            }
-
-            const targetPanel = document.getElementById(targetId);
-            if (!targetPanel) {
-                return;
-            }
-
-            tabPanels.forEach(panel => {
-                panel.classList.toggle('active', panel.id === targetId);
-            });
-
-            tabControls.forEach(control => {
-                if (control.dataset.tabTarget) {
-                    const isActive = control.dataset.tabTarget === targetId;
-                    const isTabControl = control.getAttribute('role') === 'tab';
-                    if (isTabControl) {
-                        control.classList.toggle('active', isActive);
-                        control.setAttribute('aria-selected', isActive ? 'true' : 'false');
-                    } else {
-                        control.classList.remove('active');
-                    }
-                }
-            });
-
-            if (shouldScroll && headerEl) {
-                window.scrollTo({ top: headerEl.offsetTop + headerEl.offsetHeight, behavior: 'smooth' });
-            }
-        }
-
-        tabControls.forEach(control => {
-            control.addEventListener('click', event => {
-                const targetId = control.dataset.tabTarget;
-                if (targetId) {
-                    event.preventDefault();
-                    activateTab(targetId);
-                }
-            });
-        });
-
-        activateTab('about', false);
-    </script>
-</body>
+		<script>
+			const yearEl = document.getElementById("year");
+			if (yearEl) {
+				yearEl.textContent = new Date().getFullYear();
+			}
+		</script>
+	</body>
 </html>

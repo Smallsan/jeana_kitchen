@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Discover the catering services, party trays, and dessert packages offered by Jeana's Kitchen in Malabon City."
+		/>
+		<title>Services • Jeana's Kitchen</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAI7Pq/5p5mX0vJf6Uef1xwc0C4/mR3zEF3rG0E4p3RQ2g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="hero" id="top">
+			<nav class="nav">
+				<a class="logo" href="index.html">
+					<img src="assets/images/icon.jpg" alt="Jeana's Kitchen logo" />
+					<span>Jeana's Kitchen</span>
+				</a>
+				<div class="nav-links">
+					<a class="nav-tab" href="index.html">About</a>
+					<a class="nav-tab active" href="services.html" aria-current="page"
+						>Services</a
+					>
+					<a class="nav-tab" href="menu.html">Menu</a>
+					<a class="nav-tab" href="gallery.html">Gallery</a>
+					<a class="nav-tab" href="feed.html">Feed</a>
+					<a class="nav-tab" href="contact.html">Contact</a>
+				</div>
+			</nav>
+			<div class="hero-content">
+				<span class="hero-pill">Tailor-fit celebrations</span>
+				<h1>Services designed for gatherings big and small</h1>
+				<p>
+					From party trays to full-service catering, we shape every menu around
+					your story, schedule, and guest list.
+				</p>
+			</div>
+		</header>
+
+		<main>
+			<section class="section offerings" id="services">
+				<div class="section-heading">
+					<span class="eyebrow">What We Do</span>
+					<h2>Party Trays | Packed Meals | Celebration Cakes | Full Catering</h2>
+				</div>
+				<div class="card-grid">
+					<article class="card">
+						<h3>Party Trays</h3>
+						<p>
+							Ready-to-serve trays good for 8–10 people, available in
+							best-selling entrées, pasta, and side dishes.
+						</p>
+					</article>
+					<article class="card">
+						<h3>Packed Meals</h3>
+						<p>
+							Individually packed meals ideal for corporate events, seminars, and
+							community programs.
+						</p>
+					</article>
+					<article class="card">
+						<h3>Celebration Cakes</h3>
+						<p>
+							Layer cakes, dessert tables, and sweet giveaways customized for
+							birthdays, weddings, and everything in between.
+						</p>
+					</article>
+					<article class="card">
+						<h3>Full Catering</h3>
+						<p>
+							Menu design, styling, staffing, and coordination for seamless
+							celebrations at home or at your chosen venue.
+						</p>
+					</article>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<p>&copy; <span id="year"></span> Jeana's Kitchen.</p>
+		</footer>
+
+		<script>
+			const yearEl = document.getElementById("year");
+			if (yearEl) {
+				yearEl.textContent = new Date().getFullYear();
+			}
+		</script>
+	</body>
+</html>

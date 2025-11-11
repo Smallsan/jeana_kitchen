@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="View Jeana's Kitchen party tray menus, dessert selections, brunch sets, frozen goods, and holiday specials."
+		/>
+		<title>Menu • Jeana's Kitchen</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAI7Pq/5p5mX0vJf6Uef1xwc0C4/mR3zEF3rG0E4p3RQ2g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="hero" id="top">
+			<nav class="nav">
+				<a class="logo" href="index.html">
+					<img src="assets/images/icon.jpg" alt="Jeana's Kitchen logo" />
+					<span>Jeana's Kitchen</span>
+				</a>
+				<div class="nav-links">
+					<a class="nav-tab" href="index.html">About</a>
+					<a class="nav-tab" href="services.html">Services</a>
+					<a class="nav-tab active" href="menu.html" aria-current="page"
+						>Menu</a
+					>
+					<a class="nav-tab" href="gallery.html">Gallery</a>
+					<a class="nav-tab" href="feed.html">Feed</a>
+					<a class="nav-tab" href="contact.html">Contact</a>
+				</div>
+			</nav>
+			<div class="hero-content">
+				<span class="hero-pill">Menus for every occasion</span>
+				<h1>Party trays, brunch spreads, and seasonal specials</h1>
+				<p>
+					Preview our ready-to-serve menus and holiday line-up. Tap any card to
+					zoom in and read the fine print.
+				</p>
+			</div>
+		</header>
+
+		<main>
+			<section class="section menu" id="menus">
+				<div class="section-heading">
+					<span class="eyebrow">Menu</span>
+					<h2>Our Menus</h2>
+				</div>
+				<div class="menu-grid" aria-hidden="false">
+					<figure class="menu-card">
+						<img src="assets/images/menu/main_menu.jpg" alt="Main menu" />
+						<figcaption>Main Menu</figcaption>
+					</figure>
+					<figure class="menu-card">
+						<img src="assets/images/menu/sweets_menu.jpg" alt="Sweets menu" />
+						<figcaption>Sweets Menu</figcaption>
+					</figure>
+					<figure class="menu-card">
+						<img
+							src="assets/images/menu/lunch_dinner_set.jpg"
+							alt="Lunch & Dinner sets"
+						/>
+						<figcaption>Lunch / Dinner Sets</figcaption>
+					</figure>
+					<figure class="menu-card">
+						<img src="assets/images/menu/brunch_set.jpg" alt="Brunch set" />
+						<figcaption>Brunch Set</figcaption>
+					</figure>
+					<figure class="menu-card">
+						<img src="assets/images/menu/frozen_goods_menu.jpg" alt="Frozen goods" />
+						<figcaption>Frozen Goods</figcaption>
+					</figure>
+					<figure class="menu-card menu-holiday-card">
+						<img
+							src="assets/images/menu/holiday_menu_header.jpg"
+							alt="Holiday menu 1"
+						/>
+						<figcaption>Holiday Menu 1</figcaption>
+					</figure>
+					<figure class="menu-card menu-holiday-card">
+						<img src="assets/images/menu/holiday_menu_1.jpg" alt="Holiday menu 2" />
+						<figcaption>Holiday Menu 2</figcaption>
+					</figure>
+					<figure class="menu-card menu-holiday-card">
+						<img src="assets/images/menu/holiday_menu_2.jpg" alt="Holiday menu 3" />
+						<figcaption>Holiday Menu 3</figcaption>
+					</figure>
+					<figure class="menu-card menu-holiday-card">
+						<img src="assets/images/menu/holiday_menu_3.jpg" alt="Holiday menu 4" />
+						<figcaption>Holiday Menu 4</figcaption>
+					</figure>
+				</div>
+				<p class="menu-intro">
+					Tap any menu card to view it larger — the card will open centered on the
+					screen. Press Esc or click outside to close.
+				</p>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<p>&copy; <span id="year"></span> Jeana's Kitchen.</p>
+		</footer>
+
+		<div id="lightbox" class="lightbox" aria-hidden="true">
+			<div class="lightbox-inner" role="dialog" aria-modal="true">
+				<button class="lightbox-close" aria-label="Close">×</button>
+				<figure class="lightbox-figure">
+					<img src="" alt="" />
+					<figcaption class="lightbox-caption"></figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<script>
+			const yearEl = document.getElementById("year");
+			if (yearEl) {
+				yearEl.textContent = new Date().getFullYear();
+			}
+
+			const lightbox = document.getElementById("lightbox");
+			const lightboxImg = lightbox.querySelector(".lightbox-figure img");
+			const lightboxCaption = lightbox.querySelector(".lightbox-caption");
+			const lightboxClose = lightbox.querySelector(".lightbox-close");
+
+			function openLightbox(src, alt, caption) {
+				lightboxImg.src = src;
+				lightboxImg.alt = alt || "menu image";
+				lightboxCaption.textContent = caption || "";
+				lightbox.setAttribute("aria-hidden", "false");
+				document.body.style.overflow = "hidden";
+			}
+
+			function closeLightbox() {
+				lightbox.setAttribute("aria-hidden", "true");
+				lightboxImg.src = "";
+				lightboxCaption.textContent = "";
+				document.body.style.overflow = "";
+			}
+
+			document.querySelectorAll(".menu-card img").forEach((img) => {
+				img.style.cursor = "zoom-in";
+				img.addEventListener("click", () => {
+					const src = img.getAttribute("src");
+					const alt = img.getAttribute("alt");
+					const captionEl = img.closest(".menu-card")?.querySelector("figcaption");
+					const caption = captionEl ? captionEl.textContent.trim() : "";
+					openLightbox(src, alt, caption);
+				});
+			});
+
+			lightboxClose.addEventListener("click", closeLightbox);
+			lightbox.addEventListener("click", (event) => {
+				if (event.target === lightbox) {
+					closeLightbox();
+				}
+			});
+
+			document.addEventListener("keydown", (event) => {
+				if (event.key === "Escape") {
+					closeLightbox();
+				}
+			});
+		</script>
+	</body>
+</html>

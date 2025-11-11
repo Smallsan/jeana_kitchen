@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="See party trays, desserts, and catering spreads prepared by Jeana's Kitchen."
+		/>
+		<title>Gallery • Jeana's Kitchen</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAI7Pq/5p5mX0vJf6Uef1xwc0C4/mR3zEF3rG0E4p3RQ2g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="hero" id="top">
+			<nav class="nav">
+				<a class="logo" href="index.html">
+					<img src="assets/images/icon.jpg" alt="Jeana's Kitchen logo" />
+					<span>Jeana's Kitchen</span>
+				</a>
+				<div class="nav-links">
+					<a class="nav-tab" href="index.html">About</a>
+					<a class="nav-tab" href="services.html">Services</a>
+					<a class="nav-tab" href="menu.html">Menu</a>
+					<a class="nav-tab active" href="gallery.html" aria-current="page"
+						>Gallery</a
+					>
+					<a class="nav-tab" href="feed.html">Feed</a>
+					<a class="nav-tab" href="contact.html">Contact</a>
+				</div>
+			</nav>
+			<div class="hero-content">
+				<span class="hero-pill">Look inside the kitchen</span>
+				<h1>A peek at spreads we proudly served</h1>
+				<p>
+					Swipe through recent trays, desserts, and plated meals. Each photo was
+					captured from actual events we catered.
+				</p>
+			</div>
+		</header>
+
+		<main>
+			<section class="section gallery" id="gallery">
+				<div class="section-heading">
+					<span class="eyebrow">Food Gallery</span>
+					<h2>Fresh From Our Kitchen</h2>
+				</div>
+				<div class="gallery-grid">
+					<figure class="gallery-item">
+						<img
+							src="assets/images/gallery/1.jpg"
+							alt="Assorted Jeana's Kitchen dishes displayed in trays"
+						/>
+					</figure>
+					<figure class="gallery-item">
+						<img
+							src="assets/images/gallery/2.jpg"
+							alt="Party tray of savory entrées from Jeana's Kitchen"
+						/>
+					</figure>
+					<figure class="gallery-item">
+						<img
+							src="assets/images/gallery/3.jpg"
+							alt="Close-up of Jeana's Kitchen premium puff pastry"
+						/>
+					</figure>
+					<figure class="gallery-item">
+						<img
+							src="assets/images/gallery/4.jpg"
+							alt="Freshly baked sweet treats from Jeana's Kitchen"
+						/>
+					</figure>
+					<figure class="gallery-item">
+						<img
+							src="assets/images/gallery/5.jpg"
+							alt="Jeana's Kitchen pasta tray ready for serving"
+						/>
+					</figure>
+					<figure class="gallery-item">
+						<img
+							src="assets/images/gallery/6.jpg"
+							alt="Colorful party spread prepared by Jeana's Kitchen"
+						/>
+					</figure>
+					<figure class="gallery-item">
+						<img
+							src="assets/images/gallery/7.jpg"
+							alt="Packed meals from Jeana's Kitchen ready to deliver"
+						/>
+					</figure>
+					<figure class="gallery-item">
+						<img
+							src="assets/images/gallery/8.jpg"
+							alt="Jeana's Kitchen dessert assortment on display"
+						/>
+					</figure>
+					<figure class="gallery-item">
+						<img
+							src="assets/images/gallery/9.jpg"
+							alt="Freshly cooked entrée from Jeana's Kitchen"
+						/>
+					</figure>
+					<figure class="gallery-item">
+						<img
+							src="assets/images/gallery/10.jpg"
+							alt="Jeana's Kitchen catering setup with trays"
+						/>
+					</figure>
+					<figure class="gallery-item">
+						<img
+							src="assets/images/gallery/11.jpg"
+							alt="Savory dishes from Jeana's Kitchen ready to serve"
+						/>
+					</figure>
+					<figure class="gallery-item">
+						<img
+							src="assets/images/gallery/12.jpg"
+							alt="Jeana's Kitchen dessert table with sweet selections"
+						/>
+					</figure>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<p>&copy; <span id="year"></span> Jeana's Kitchen.</p>
+		</footer>
+
+		<script>
+			const yearEl = document.getElementById("year");
+			if (yearEl) {
+				yearEl.textContent = new Date().getFullYear();
+			}
+		</script>
+	</body>
+</html>
