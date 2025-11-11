@@ -78,7 +78,10 @@
 						<figcaption>Brunch Set</figcaption>
 					</figure>
 					<figure class="menu-card">
-						<img src="assets/images/menu/frozen_goods_menu.jpg" alt="Frozen goods" />
+						<img
+							src="assets/images/menu/frozen_goods_menu.jpg"
+							alt="Frozen goods"
+						/>
 						<figcaption>Frozen Goods</figcaption>
 					</figure>
 					<figure class="menu-card menu-holiday-card">
@@ -89,21 +92,30 @@
 						<figcaption>Holiday Menu 1</figcaption>
 					</figure>
 					<figure class="menu-card menu-holiday-card">
-						<img src="assets/images/menu/holiday_menu_1.jpg" alt="Holiday menu 2" />
+						<img
+							src="assets/images/menu/holiday_menu_1.jpg"
+							alt="Holiday menu 2"
+						/>
 						<figcaption>Holiday Menu 2</figcaption>
 					</figure>
 					<figure class="menu-card menu-holiday-card">
-						<img src="assets/images/menu/holiday_menu_2.jpg" alt="Holiday menu 3" />
+						<img
+							src="assets/images/menu/holiday_menu_2.jpg"
+							alt="Holiday menu 3"
+						/>
 						<figcaption>Holiday Menu 3</figcaption>
 					</figure>
 					<figure class="menu-card menu-holiday-card">
-						<img src="assets/images/menu/holiday_menu_3.jpg" alt="Holiday menu 4" />
+						<img
+							src="assets/images/menu/holiday_menu_3.jpg"
+							alt="Holiday menu 4"
+						/>
 						<figcaption>Holiday Menu 4</figcaption>
 					</figure>
 				</div>
 				<p class="menu-intro">
-					Tap any menu card to view it larger — the card will open centered on the
-					screen. Press Esc or click outside to close.
+					Tap any menu card to view it larger — the card will open centered on
+					the screen. Press Esc or click outside to close.
 				</p>
 			</section>
 		</main>
@@ -153,7 +165,9 @@
 				img.addEventListener("click", () => {
 					const src = img.getAttribute("src");
 					const alt = img.getAttribute("alt");
-					const captionEl = img.closest(".menu-card")?.querySelector("figcaption");
+					const captionEl = img
+						.closest(".menu-card")
+						?.querySelector("figcaption");
 					const caption = captionEl ? captionEl.textContent.trim() : "";
 					openLightbox(src, alt, caption);
 				});
